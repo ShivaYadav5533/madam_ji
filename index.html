@@ -36,3 +36,53 @@
   <script src="script.js"></script>
 </body>
 </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Heart Text</title>
+  <style>
+    body {
+      background-color: #fce4ec;
+      text-align: center;
+      padding-top: 100px;
+      font-family: Arial, sans-serif;
+    }
+
+    .animated-text {
+      font-size: 40px;
+      color: #e91e63;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    .heart {
+      color: red;
+      font-size: 30px;
+      animation: float 2s infinite ease-in-out;
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="animated-text">
+    Love is in the air 
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+    <span class="heart">♥</span>
+  </div>
+
+</body>
+</html>
