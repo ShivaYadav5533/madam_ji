@@ -1,46 +1,37 @@
 body {
   margin: 0;
-  padding: 0;
-  font-family: 'Comic Sans MS', cursive;
-  background: linear-gradient(to bottom right, #ffe6f0, #ccf5ff);
-  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #ffe0f0, #ffe6c1);
+  color: #333;
+  scroll-behavior: smooth;
 }
 
 .container {
   text-align: center;
+  padding: 50px 20px;
+}
+
+.rohan-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff69b4;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+  margin: 20px 0;
+}
+
+.scroll-text {
+  font-style: italic;
+  animation: bounce 1.5s infinite;
+}
+
+.section {
   padding: 100px 20px;
-}
-
-.banner {
-  font-size: 3rem;
-  animation: bounce 2s infinite;
-  color: #ff3399;
-}
-
-.card {
-  background: white;
-  margin: 30px auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 400px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px #ffb3d1;
-  font-size: 1.2rem;
-}
-
-button {
-  padding: 15px 30px;
-  font-size: 1rem;
-  background-color: #ff66cc;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: 0 0 10px #ff99cc;
-}
-
-button:hover {
-  background-color: #ff3399;
+  text-align: center;
+  background: #fff8f0;
+  border-top: 5px dashed #ffb6c1;
+  margin-top: 20px;
 }
 
 @keyframes bounce {
@@ -48,36 +39,6 @@ button:hover {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-10px);
   }
 }
-
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.rohan-pic {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #ff99cc;
-    margin-top: 20px;
-    box-shadow: 0 0 15px #ffb3d1;
-    animation: pop 2s ease-in-out;
-  }
-  
-  @keyframes pop {
-    0% {
-      transform: scale(0.5);
-      opacity: 0;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
